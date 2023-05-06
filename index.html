@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2>Danh muc san pham</h2> 
+    <div id="category" class="category__list"></div>
+
+    <h2>Danh sach san pham</h2>
+    <div class="search" id="search">
+        <input type="text">
+        <button>Search</button>
+    </div>
+
+    <div id="filter">
+        <select>
+            <option value="default">Default</option>
+            <option value="cheap-to-expensive">Cheap to expensive</option>
+            <option value="expensive-to-cheap">Expnesive to cheap</option>
+            <option value="discount">Discount</option>
+        </select>
+    </div>
+    <div id="products" class="product__list"></div>
+
+    <div class="pagination">
+        <span class="pagination__button" id="paginationPrev">Prev</span>
+        <span class="pagination__number" id="paginationNumber">1</span>
+        <span class="pagination__button" id="paginationNext">Next</span>
+
+
+    </div>
+
+
+    <script type="module" src="./js/category.js"></script>
+    <script type="module" src="./js/product.js"></script>
+</body>
+</html>
